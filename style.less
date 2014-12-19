@@ -2,13 +2,22 @@
 @bgColor: #568ea1;
 @textColor: #fff;
 @textHoverColor: #bfd4c4;
+@orangeText: #fe992a;
+@orangeLighten: #ffba6e;
+@footerColor: #e87976;
+@grayText: #737c85;
 
+@font-face
+{
+    font-family: Lato;
+    src: url('Lato-Light.ttf');
+}
 
 
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif; 
+    font-family: 'Lato';
    
             
     
@@ -29,7 +38,14 @@ body {
                         height: 73px;
                         background: url(images/logo.png) no-repeat;
                         float: left;
-                       
+                     &:hover{
+                         -webkit-transform: matrix(0.866,0.5,-0.5,0.866,0,0); /* Chrome, Safari, Opera */
+                        transform: matrix(0.866,0.5,-0.5,0.866,0,0);
+                          -webkit-transition:  ease-out 0.3s;
+                         -moz-transition:  ease-out 0.3s;
+                         -o-transition: ease-out 0.3s;
+                         transition:   ease-out 0.3s;
+                     }  
                     }
                     
                     ul{  
@@ -57,11 +73,18 @@ body {
                 }
                 
                 .description{
-                    color: @textColor; 
+                    width: 400px;
+                    height: 260px;
+                    color: @textColor;
+                    margin: 169px 0 0 300px;
                     
                     h1{
-                        font: 52pt sans-serif;
+                        font: 36pt 'Lato';
+                        
                         text-shadow: -2px 3px 2px rgba(150, 150, 150, 1);
+                    }
+                    p{
+                    text-shadow: -2px 3px 2px rgba(150, 150, 150, 1);
                     }
                 
                 }
