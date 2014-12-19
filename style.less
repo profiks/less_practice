@@ -1,0 +1,70 @@
+/* Global Variables */
+@bgColor: #568ea1;
+@textColor: #fff;
+@textHoverColor: #bfd4c4;
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+   
+            
+    
+    
+            header{
+                width: auto;
+                height: 917px;                
+                padding: 21px 0 0 25px;
+                background: url(images/bg.jpg) no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+                background-color: @bgColor;
+                
+                nav {
+                    div.logo{
+                        width: 73px;
+                        height: 73px;
+                        background: url(images/logo.png) no-repeat;
+                        float: left;
+                       
+                    }
+                    
+                    ul{  
+                        
+                        margin: 0  0 0 222px;
+                        
+                         li{   color: @textColor;                             
+                               float: left;
+                               list-style: none;
+                               margin: 0 56px 0 0;
+                            
+                                 &:hover{
+                                    cursor: pointer;
+                                    color: @textHoverColor;  
+                                 }
+                             
+                                                                  
+                                     
+
+                           }
+                            li.list:after{
+                            content: url('images/list_style.png');
+                            }
+                    }
+                }
+                
+                .description{
+                    color: @textColor; 
+                    
+                    h1{
+                        font: 52pt sans-serif;
+                        text-shadow: -2px 3px 2px rgba(150, 150, 150, 1);
+                    }
+                
+                }
+            }
+    
+}
