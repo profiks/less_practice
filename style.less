@@ -13,6 +13,11 @@
     src: url('Lato-Light.ttf');
 }
 
+.centred{
+width: 960px;
+height: auto;
+    margin: 0 auto;
+}
 
 body {
     margin: 0;
@@ -95,11 +100,12 @@ body {
       /*content*/
     
      .content{
+         .centred;
          height: 463px;
          padding: 30px;
-                 aside{  outline: 1px solid #000;
+                 aside{  //outline: 1px solid #000;
                      
-                         display: block;
+                         display: inline;
                          float: left;
                          width: 247px;
                          height: 160px;
@@ -112,8 +118,8 @@ body {
                  
                  }
                  article{ 
-                     outline: 1px solid #000;
-                    display: block;
+                     //outline: 1px solid #000;
+                    display: inline;
                       width: 600px;
                      height: 204px;
                  
@@ -128,6 +134,10 @@ body {
                     float: left;
                         li{
                             list-style: none;
+                                a {
+                                    color: @textColor;
+                                    text-decoration: none;
+                                }
                         }
                 }
     }
