@@ -109,11 +109,35 @@ body {
                          float: left;
                          width: 247px;
                          height: 160px;
+                       position: relative;
                      
                          p{
                          color: @orangeText;
                          font-style: italic;
                          font-size: 15pt;
+                         }
+                         
+                         .arrows{ width: 60px;
+                                 position: absolute;
+                                 right: 10px;
+                                 bottom: -200px;
+                              a{
+                                  float: left;
+                                  display: block;                                  
+                                  width: 29px;
+                                  height: 30px;
+                              }
+                             
+                             .back{
+                                 
+                                 background:url(images/l_arrow.jpg) no-repeat;
+                                 background-color: @orangeText;
+                                 
+                             }
+                             .next{
+                                 background:url(images/r_arrow.jpg) no-repeat;
+                                 background-color: @orangeLighten;
+                             }
                          }
                  
                  }
@@ -122,6 +146,14 @@ body {
                     display: inline;
                       width: 600px;
                      height: 204px;
+                         p{
+                             color:@grayText;
+                         }
+                     h3{
+                         color: @orangeText;
+                     }
+                     
+                     
                  
                  }
      }
